@@ -8,7 +8,7 @@ function App() {
   const [latestPrediction, setLatestPrediction] = useState(null);
   const [logs, setLogs] = useState([]);
 
-  // Load logs from localStorage on initialization
+
   useEffect(() => {
     try {
       const stored = localStorage.getItem('donor_prediction_logs');
@@ -16,7 +16,7 @@ function App() {
         const parsed = JSON.parse(stored);
         setLogs(parsed);
         if (parsed.length > 0) {
-          // Set the latest prediction to the most recent log
+          
           setLatestPrediction(parsed[0]);
         }
       }
@@ -34,14 +34,14 @@ function App() {
     setLatestPrediction(newLog);
 
     setLogs((prevLogs) => {
-      // Prepend the newest prediction
+      
       const updated = [newLog, ...prevLogs];
       
-      // Limit to latest 10 logs per category to prevent clutter and keep page fast
+      
       const highRisk = updated.filter(l => l.prediction === 'Likely to Churn').slice(0, 10);
       const stable = updated.filter(l => l.prediction === 'Not Likely to Churn').slice(0, 10);
       
-      // Merge and maintain reverse chronological order (newest first)
+      
       const merged = [...highRisk, ...stable].sort(
         (a, b) => new Date(b.timestamp) - new Date(a.timestamp)
       );
