@@ -1,45 +1,70 @@
 # Foresight-NGO
 Machine learning project to predict donor churn using Random forest classifier
 
-Donor Churn Prediction Dashboard
-Overview
+# Donor Churn Prediction Dashboard
 
 A full-stack machine learning dashboard that predicts whether donors are likely to stop donating using Random Forest classification.
 
-Features
-Donor churn prediction
-Real-time dashboard
-ML model integration
-Prediction analytics
-React frontend
-Flask backend
-Tech Stack
-React
-Flask
-Python
-Scikit-learn
-Pandas
+---
 
-Project Structure
+# Features
+
+- Donor churn prediction
+- Real-time dashboard
+- ML model integration
+- Prediction analytics
+- React frontend
+- Flask backend
+
+---
+
+# Tech Stack
+
+- React
+- Flask
+- Python
+- Scikit-learn
+- Pandas
+
+---
+
+# Project Structure
+
+```text
 backend/
 frontend/
 README.md
+```
 
-How to Run
-Backend
+---
+
+# How to Run
+
+## Backend
+
+```bash
 cd backend
 python app.py
+```
 
-Frontend
+## Frontend
+
+```bash
 cd frontend
 npm start
+```
 
-ML Model
+---
+
+# ML Model
 
 Random Forest Classifier used for churn prediction.
 
-Future Improvements
-Better UI
-More accurate models
-Deployment
-Authentication
+---
+
+# Future Improvements
+
+- Better UI
+- More accurate models
+- Deployment support
+- Authentication system
