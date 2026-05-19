@@ -6,7 +6,6 @@ import os
 import traceback
 
 app = Flask(__name__)
-# Allow CORS for all domains to prevent frontend connection issues
 CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Load the trained model
