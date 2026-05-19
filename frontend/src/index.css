@@ -11,7 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 32x32px radial dot pattern at 10% opacity */
+
 .neo-pattern {
   background-image: radial-gradient(rgba(0, 0, 0, 0.1) 2px, transparent 2px);
   background-size: 32px 32px;
